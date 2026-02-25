@@ -1,3 +1,4 @@
+import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
@@ -9,10 +10,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <Navbar/>
-        <div>NAVBAR TEST</div>
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer/>
       </body>
     </html>
   );
