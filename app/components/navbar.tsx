@@ -25,7 +25,7 @@ export default function Navbar() {
 
           {/* Links */}
           <div className="flex gap-10">
-            <Link href="/home" className={linkClass("/home")} style={linkStyle("/home")}>Home</Link>
+            <Link href="/" className={linkClass("/")} style={linkStyle("/")}>Home</Link>
             <Link href="/projects" className={linkClass("/orojects")} style={linkStyle("/projects")}>Projects</Link>
             <Link href="/about" className={linkClass("/about")} style={linkStyle("/about")}>About</Link>
           </div>
